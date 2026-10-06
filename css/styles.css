@@ -155,6 +155,7 @@
  
    /*A4: running specificity experiment*/
    /*Prediction: the ID will win because it has higher specificity than a selector and than a class*/
+   /*Confirmed with Dev Tools afterwards*/
    blockquote{
       color: var(--blue-ok30);
    }
@@ -164,5 +165,15 @@
    }
 
    #highlight{
+      color: var(--blue-ok70);
+   }
+
+   /*A4: running specificity experiment with only classes*/
+   /*Since all classes were used, the last class to be written wins which is much easier to reason about
+   due to the source order*/
+   .update{
+      color: var(--blue-ok30);
+   }
+   .highlight{
       color: var(--blue-ok70);
    }
