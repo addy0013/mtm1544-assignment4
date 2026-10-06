@@ -117,6 +117,13 @@
       border-radius: 6px;
 }
 
+   /*A4: giving every link a hover and focus state*/
    button:hover {
       background-color: color-mix(in oklch, var(--blue-ok70) 85%, black);
+   }
+
+   /*A4: confirmed using only Tab on keyboard*/
+   button:focus{
+        outline: 3px solid orange;
+         outline-offset: 2px;
    }
