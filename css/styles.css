@@ -144,3 +144,11 @@
        font-weight: 700;
        border-bottom: 2px solid var(--blue-ok30);
    }
+
+   /*A4: using ::before to insert symbol pointing down because it is purely decorative
+   and there is no need for assistive technology to read it out since the prompt
+   clearly states to scroll down */
+
+   .prompt::before{
+      content: "↓";
+   }
