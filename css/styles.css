@@ -152,3 +152,17 @@
    .prompt::before{
       content: "↓";
    }
+ 
+   /*A4: running specificity experiment*/
+   /*Prediction: the ID will win because it has higher specificity than a selector and than a class*/
+   blockquote{
+      color: var(--blue-ok30);
+   }
+
+   .review{
+      color: var(--blue-ok50);
+   }
+
+   #highlight{
+      color: var(--blue-ok70);
+   }
