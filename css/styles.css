@@ -57,11 +57,11 @@
 
    /*A3: adding web font*/
    /* Group of heading 1&2 with sans-serif font*/
-   h1, h2{
+   /*h1, h2{
       font-family: "Be Vietnam Pro", sans-serif;
       font-weight: 800;
       font-style: normal;
-   }
+   }*/
 
    /* .intro paragraph styled with dark crimson color.*/
 
@@ -176,4 +176,13 @@
    }
    .highlight{
       color: var(--blue-ok70);
+   }
+
+   /*A4: rewriting h1, h2 groups using where()*/
+   /*is() adds specificity based on the most specific argument while where() does not. 
+   This is why is() would have scored differently*/
+   :where(h1, h2){
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 800;
+      font-style: normal;
    }
