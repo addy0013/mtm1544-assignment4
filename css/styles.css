@@ -40,7 +40,7 @@
 
 
    /*paragraph selector with ebony colour + line-height of 2*/
-   p {
+   p,li {
       color: #4A5043;
       line-height: 2;
    }
@@ -82,13 +82,13 @@
    }
 
    /*A2: testing margin collapse, applied in HTML*/
-     #bottom-margin{
+     /*#bottom-margin{
         margin-bottom: 60px;
      }
 
      #top-margin{
         margin-top: 20px;
-     }
+     }*/
 
 
    /* #summit heading styled with left border and padding */
@@ -124,6 +124,23 @@
 
    /*A4: confirmed using only Tab on keyboard*/
    button:focus{
-        outline: 3px solid orange;
-         outline-offset: 2px;
+      outline: 3px solid orange;
+      outline-offset: 2px;
+   }
+
+   li {
+      list-style: none;
+      width: 100%;
+      padding: 6px 12px; 
+   }
+
+   /*A4: using :nth-child(odd)*/
+   li:nth-child(odd){
+      background-color: var(--blue190);
+   }
+
+   /*A4: using first-child()*/
+   li:first-child{
+       font-weight: 700;
+       border-bottom: 2px solid var(--blue-ok30);
    }
